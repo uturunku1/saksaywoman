@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+        About
+        </title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    </head>
+
+
+
+    <body>
+            <h2>
+            About this blog and the blogger
+            </h2>
+            <br>
+            <p>
+            <ul id="menu2">
+                <li id="items2"><a href="index.html">Home</a></li>
+                <li id="items2" class="active"><a href="about.html">About</a></li>
+                <li id="items2"><a href="previous.html">Previous Posts</a></li>
+                <li id="items2"><a href="contact.html">Contact Me</a></li>
+            </ul>
+            </p>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                       <img id="bigimage"
+                        class="img-responsive"
+                        src="four.jpeg"
+                        />
+                    </div>
+                    <div id="description">
+                    Cusco, 2008
+                    </div>
+                </div>
+            <br>
+            <br>
+            <br>
+                <div class="row">
+
+                    <div class="col-xs-2">
+                        <img class="img-thumbnail"
+                         src="one.jpeg"
+                         width=180 height=90
+                         alt="San Blas, 2008"
+                         />
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="img-thumbnail"
+                         src="two.jpeg"
+                         width=180 height=90
+                         alt="With my dad (Lima, 2016)"
+                         />
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="img-thumbnail"
+                         src="three.jpeg"
+                         width=180 height=90
+                         alt="With my mom's family (Huarocondo, 2015)"
+                         />
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="img-thumbnail"
+                         src="four.jpeg"
+                         width=180 height=90
+                         alt="Cusco,2008"
+                         />
+                    </div>
+                </div>
+
+
+                <br>
+
+                <div id="main">
+                <h3> Saksay-<i>Woman</i></h3>
+                <p> In 2011, I jumped into an airplane in Peru to come
+                  to my current home, Portland, Oregon. As a gift to me and my perseverance in
+                  adapting to a different culture, I decided to start this blog. From long ago
+                  I’ve been wanting to share my humble expat perspective on this exceptional,
+                  fast changing country. I’ve always admire the honesty and curious eyes of
+                  westerners living in or visiting “exotic” countries, and their stories on
+                  bizarre foods and ethnic customs. But, in my opinion, is time to flip the
+                  camera and look at what America has to offer to an indigenous Andean
+                  girl. My name is Luces. I come from Cusco, the famous city for Machupicchu
+                  and the ruins of Saksaywaman (pronounced “sexy-woman”). The name of this blog
+                  is in honor to my constant reflections on the conflicts of the ancient and the
+                  modern that lives within me, and probably within all of us.
+                </p>
+                </div>
+            </div>
+
+
+        <p></p>
+        <br>
+
+
+        <script type="text/javascript" src="jquery-3.1.1.min.js"> </script>
+        <script>
+            <!-- the following functio says wait 4 my whole document to load up before you run js -->
+            $(document).ready(function() {
+
+            $(".img-thumbnail").click(function(){
+                $("#bigimage").attr('src',
+                    $(this).attr('src'));
+                $("#description").html($(this).attr('alt'));
+            });
+
+            });
+        </script>
+
+    </body>
+</html>

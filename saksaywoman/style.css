@@ -1,0 +1,178 @@
+
+html {
+  font-family: Arial, 'Lucida Sans Unicode';
+  font-size:120%;
+  line-height:1.5;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body{
+    background-color: black;
+    }
+
+#presentation
+{
+    background: url("bigluces.jpg");
+    background-size: 85% 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu
+{
+    margin-left: 720px;
+
+}
+
+#menu2{
+  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-left: 65px;
+
+}
+
+#items{
+    clear:both;
+    font-size:115%;
+    padding-top:60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    }
+
+#items2{
+  float: left;
+  display: inline;
+  width: 200px;
+  overflow: hidden;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 55px;
+    padding-top:20px;
+    font-family: Lucida Console;
+    text-transform: uppercase;
+    color: purple;
+
+}
+
+h2
+{
+    color: purple;
+    font-family: Lucida Console;
+    text-align: center;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+h3
+{
+    font-size:20px;
+    text-transform: uppercase;
+    color: purple;
+}
+
+h4
+{
+    color: purple;
+    font-style: italic;
+    font-family:"Serif";
+
+ }
+
+#main
+{
+    background-color: white;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 3em;
+    padding: 20px 50px 10px 50px;
+
+}
+
+#pages
+{
+    float: right;
+
+}
+
+
+a:link, a:visited
+{
+    display:block;
+    width: 120px;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active, .active a:visited
+{
+    color: yellow;
+}
+
+
+.img-thumbnail:hover {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: purple;
+  border: 1px solid purple;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+#description{
+    color: white;
+    top: 155;  /*if I put bottom:0 then the description or caption will go at the bottom of the main picture*/
+    padding: 0px 10px 35px 2px; /*top right bottom left*/
+    margin: 20px;
+    position: absolute;
+}
+
+@media screen and (max-width:950px){
+        h1{
+        font-size: 35px;
+        }
+
+        #items{
+        clear:both;
+        font-size:115%;
+        text-decoration: underline;
+        padding:4px;
+        }
+        #menu{
+        display:table;
+        margin: auto;
+        padding: 0px;
+        }
+        #items2{
+        clear:both;
+        font-size: 115%;
+        text-decoration: underline;
+        padding: 4px;
+        }
+        #menu2{
+        display:table;
+        margin: auto;
+        padding: 0px;
+        }
+
+        }
+        #description{
+        position: relative;
+        top: 40px;
+        left: 1px;
+        }
+
+}
